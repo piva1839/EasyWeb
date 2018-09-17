@@ -127,6 +127,8 @@ img {
 }
 
 .main-header__main-info-list {
+  list-style-type: none;
+
   margin-top: 50px;
   margin-left: 310px;
 }
@@ -135,9 +137,9 @@ img {
   margin-bottom: 15px;
 
   font-family: "FiraSans-UltraLight", sans-serif;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 32px;
   color: #ffffff;
 }
 
@@ -151,12 +153,100 @@ img {
   color: #ffffff;
 }
 
+.main-header__main-info-inserted-list {
+  list-style-type: none;
+
+  display: flex;
+}
+
 .main-header__main-info-inserted-item {
+  position: relative;
+  margin-left: 40px;
+  padding-left: 10px;
+  padding-top: 40px;
+
   font-family: "Roboto-Bold", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   color: #ffffff;
+  text-transform: lowercase;
+}
+
+.main-header__main-info-inserted-item:before {
+  content: "";
+	display: block;
+  position: absolute;
+  left: 0;
+  top: 47px;
+  width: 6px;
+  height: 6px;
+
+  background-color: #65ad19;
+  border-radius: 50%;
+}
+
+.main-header__main-info-inserted-item--number-one:after {
+  content: "01";
+	display: block;
+  position: absolute;
+  left: -20px;
+  top: 7px;
+
+  font-size: 35px;
+  font-weight: 800;
+  color: #707883;
+}
+.main-header__main-info-inserted-item--number-two:after {
+  content: "02";
+	display: block;
+  position: absolute;
+  left: -20px;
+  top: 7px;
+
+  font-size: 35px;
+  font-weight: 800;
+  color: #707883;
+}
+.main-header__main-info-inserted-item--number-three:after {
+  content: "03";
+	display: block;
+  position: absolute;
+  left: -20px;
+  top: 7px;
+
+  font-size: 35px;
+  font-weight: 800;
+  color: #707883;
+}
+
+.main-header__main-info-inserted-item:first-child {
+  margin-left: 20px;
+}
+
+.main-header__main-info-item-title {
+  position: relative;
+
+  padding-left: 20px;
+
+  font-family: "FiraSans-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.main-header__main-info-item-title:before {
+  content: "";
+	display: block;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 12px;
+  height: 12px;
+
+  background-color: #7b8594;
+  border-radius: 50%;
 }
 
 /* features*/
