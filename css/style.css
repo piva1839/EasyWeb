@@ -23,6 +23,11 @@
   src: url(fonts/FiraSans-Bold.otf);
 }
 
+@font-face {
+  font-family: "FiraSans-ExtraLight";
+  src: url(fonts/FiraSans-ExtraLight.otf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -54,6 +59,7 @@ img {
 }
 
 /* main navigation */
+
 .main-nav {
   background-color: #19232f;
 }
@@ -95,6 +101,7 @@ img {
 }
 
 /* header*/
+
 .main-header {
   min-height: 506px;
 
@@ -250,7 +257,68 @@ img {
 }
 
 /* features*/
+
+.features__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.features__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.features__item {
+  width: 40%;
+  margin-bottom: 60px;
+}
+
+.features__item--bg-01 {
+  background: url("../img/01.png") no-repeat;
+  background-position: left center;
+}
+
+.features__item--bg-02 {
+  background: url("../img/02.png") no-repeat;
+  background-position: right center;
+}
+
+.features__item--bg-03 {
+  background: url("../img/03.png") no-repeat;
+  background-position: left center;
+}
+
+.features__item--bg-04 {
+  background: url("../img/04.png") no-repeat;
+  background-position: right center;
+}
+
+.features__item--align-right {
+  text-align: right;
+}
+
 /* advantages*/
+
+.advantages__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.advantages__title {
+  font-family: "FiraSans-ExtraLight", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 42px;
+  text-decoration: none;
+  color: #7a7a7a;
+  text-align: center;
+}
+
 /* portfolio*/
 /* prices*/
 /* about-us*/
