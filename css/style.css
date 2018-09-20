@@ -103,7 +103,7 @@ img {
 /* header*/
 
 .main-header {
-  min-height: 506px;
+  padding-bottom: 300px;
 
   background: #1b212a url("../img/headerbg.jpg") no-repeat;
   background-size: cover;
