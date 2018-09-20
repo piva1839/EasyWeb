@@ -28,6 +28,16 @@
   src: url(fonts/FiraSans-ExtraLight.otf);
 }
 
+@font-face {
+  font-family: "FiraSans-Book";
+  src: url(fonts/FiraSans-Book.otf);
+}
+
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(fonts/Roboto-bold.ttf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -68,7 +78,7 @@ img {
   display: flex;
   justify-content: space-between;
 
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -103,19 +113,19 @@ img {
 /* header*/
 
 .main-header {
-  padding-bottom: 300px;
-
-  background: #1b212a url("../img/headerbg.jpg") no-repeat;
-  background-size: cover;
+  background-color: #1b212a;
 }
 
 .main-header__inner {
   display: flex;
   flex-direction: column;
 
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+
+  background: #1b212a url("../img/headerbg.jpg") no-repeat;
+  background-size: cover;
 }
 
 .main-header__site-title {
@@ -137,7 +147,8 @@ img {
   list-style-type: none;
 
   margin-top: 50px;
-  margin-left: 310px;
+  margin-left: 400px;
+  margin-bottom: 50px;
 }
 
 .main-header__main-info-title {
@@ -259,7 +270,7 @@ img {
 /* features*/
 
 .features__inner {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -301,6 +312,24 @@ img {
   text-align: right;
 }
 
+.features__item-title {
+  margin: 10px 0;
+
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #161f2b;
+}
+
+.features__item-description {
+  font-family: "FiraSans-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #969696;
+}
+
 /* advantages*/
 
 .advantages {
@@ -308,9 +337,9 @@ img {
 }
 
 .advantages__inner {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 10px 50px;
 }
 
 .advantages__title {
@@ -330,14 +359,33 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
-  margin-bottom: 100px;
 }
 
 .advantages__item {
   width: 25%;
-  padding: 10px;
+  padding: 30px;
 
   text-align: center;
+}
+
+.advantages__item-title {
+  margin: 25px 0;
+
+  font-family: "FiraSans-Book", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #161f2b;
+}
+
+.advantages__item-description {
+  margin: 25px 0;
+
+  font-family: "FiraSans-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #969696;
 }
 
 /* portfolio*/
