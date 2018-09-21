@@ -95,6 +95,11 @@ img {
   padding: 0 10px;
 }
 
+.main-nav__logo-wrapper {
+  display: flex;
+  margin: auto 0;
+}
+
 .main-nav__main-menu {
   padding: 18px 0;
 }
@@ -575,9 +580,134 @@ img {
   width: 40%;
 }
 
+.about-us__description {
+  font-family: "FiraSans-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #969696;
+}
+
 .about-us__img-block {
   width: 60%;
 
   text-align: right;
 }
 /* footer*/
+
+.footer {
+  background-color: #253950;
+}
+
+.footer__inner {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__part {
+  list-style-type: none;
+}
+
+.footer__part-address {
+  width: 30%;
+  padding: 27px 0 50px 10px;
+}
+
+.footer__part-address-item {
+  margin-top: 10px;
+
+  font-family: "FiraSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #c2c3c6;
+}
+
+.footer__part-contact {
+  width: 35%;
+  padding: 50px;
+
+  background-color: #203145;
+}
+
+.footer__part-contact-item-title,
+.footer__part-socials-item-title {
+  margin-bottom: 25px;
+
+  font-family: "FiraSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #c2c3c6;
+  text-transform: uppercase;
+}
+
+.footer__part-contact-item-addresssline1,
+.footer__part-contact-item-addresssline2,
+.footer__part-contact-item-addresssline3 {
+  margin-bottom: 20px;
+  padding-left: 40px;
+
+  font-family: "FiraSans-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #475f7c;
+}
+
+.footer__part-contact-item-addresssline1 {
+  background: url("../img/findus.png") no-repeat;
+  background-position: left center;
+}
+
+.footer__part-contact-item-addresssline2 {
+  background: url("../img/callus.png") no-repeat;
+  background-position: left center;
+}
+
+.footer__part-contact-item-addresssline3 {
+  background: url("../img/mailus.png") no-repeat;
+  background-position: left center;
+}
+
+.footer__part-contact-item-phonetext {
+  font-family: "FiraSans-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer__part-socials {
+  width: 35%;
+  padding: 50px 10px 50px 0;
+
+  background-color: #203145;
+}
+
+.footer__part-socials-item-link {
+  display: inline-block;
+  vertical-align: top;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+
+  font-size: 0;
+}
+
+.footer__part-socials-item-link--fb {
+  background: url("../img/fb.png") no-repeat;
+}
+
+.footer__part-socials-item-link--viber {
+  background: url("../img/viber.png") no-repeat;
+}
+
+.footer__part-socials-item-link--skype {
+  background: url("../img/skype.png") no-repeat;
+}
+
+.footer__part-socials-item-link--instagram {
+  background: url("../img/instagram.png") no-repeat;
+}
