@@ -433,6 +433,7 @@ img {
 }
 
 .portfolio__title {
+  margin-left: 25px;
   padding: 40px 0 15px;
 
   font-family: "FiraSans-Light", sans-serif;
@@ -446,6 +447,8 @@ img {
   padding-top: 25px;
   padding-left: 25px;
   padding-right: 25px;
+
+  outline: none;
 }
 
 .portfolio__list {
@@ -455,7 +458,11 @@ img {
 }
 
 .portfolio__item {
-  width: calc(1180px / 3);
+  width: calc(1130px / 3);
+}
+
+.portfolio__item-link {
+  outline: none;
 }
 
 .portfolio__item-image {
@@ -483,6 +490,46 @@ img {
   line-height: 28px;
   color: #fefeff;
 }
+
+.my-dots {
+  position: absolute;
+  top: -40px;
+  right: 25px;
+
+  list-style-type: none;
+}
+
+.my-dots li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.my-dots li button:hover {
+  background: #ffffff;
+}
+
+.my-dots li.slick-active button {
+  background: #ffffff;
+}
+
+
 
 /* prices*/
 
