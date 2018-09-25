@@ -205,6 +205,10 @@ img {
   opacity: 1;
 }
 
+.main-nav__logo-picture {
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 860px) {
   .main-nav__main-menu-list {
     display: none;
