@@ -6,6 +6,18 @@ $(document).ready(function(){
 		$(this).addClass("active");
 	});
 
+  $(".main-nav__burger-menu-list").click(function() {
+    $(".main-nav__burger-menu-list").css("display","none");
+  });
+
+  $(".main-nav__burger-menu-icon").click(function() {
+    $(".main-nav__burger-menu-list").css("display","block");
+  });
+
+  $(".main-nav__burger-menu-item-link").click(function() {
+    $(".main-nav__burger-menu-list").css("display","none");
+  });
+
   $(".main-slider").slick({
     dots: true,
     dotsClass: "my-dots",
@@ -36,14 +48,6 @@ $(document).ready(function(){
 
 	$(".subitems__item a").click(function() {
 		$(".subitems").css("display","none");
-	});
-
-	$(".burger").click(function() {
-		$(".menu-mob").css("display","block");
-	});
-
-	$(".menu-mob a").click(function() {
-		$(".menu-mob").css("display","none");
 	});
 
 	$(".fixed-mail").click(function() {
