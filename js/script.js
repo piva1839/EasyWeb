@@ -26,6 +26,14 @@ $(document).ready(function(){
   	nextArrow: '<img src="img/arrowright.png">'
   });
 
+	$(".main-mobile-slider").slick({
+		dots: true,
+		dotsClass: "my-mobile-dots",
+		arrows: false,
+		prevArrow: '<img src="img/arrowleft.png">',
+		nextArrow: '<img src="img/arrowright.png">'
+	});
+
 	$(".more-menu-items").click(function(event) {
 		event.preventDefault();
   });

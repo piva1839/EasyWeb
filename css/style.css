@@ -252,7 +252,7 @@ img {
   text-transform: uppercase;
 }
 
-.sink-title {
+.think-title {
   font-weight: 400;
 }
 
@@ -380,6 +380,35 @@ img {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 860px) {
+  .main-header__site-title {
+    font-family: "FiraSans-Black", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 42px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .think-title-bg {
+    background-color: #325a82;
+    opacity: 0.9;
+  }
+
+  .main-header__main-info-list {
+    list-style-type: none;
+
+    margin-left: 0;
+  }
+
+  .main-header__main-info-title,
+  .main-header__main-info-item-title,
+  .main-header__main-info-item--display {
+    display: none;
+  }
+}
+
 /* features*/
 
 .features__inner {
@@ -443,6 +472,29 @@ img {
   color: #969696;
 }
 
+@media screen and (max-width: 860px) {
+  .features__list {
+    flex-direction: column;
+  }
+
+  .features__item {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .features__item--bg-01,
+  .features__item--bg-02,
+  .features__item--bg-03,
+  .features__item--bg-04 {
+    background-position: center;
+  }
+
+  .features__item--align-right {
+    text-align: center;
+  }
+}
+
 /* advantages*/
 
 .advantages {
@@ -499,6 +551,19 @@ img {
   font-weight: 500;
   line-height: 16px;
   color: #969696;
+}
+
+@media screen and (max-width: 860px) {
+  .advantages__list {
+    flex-direction: column;
+  }
+
+  .advantages__item {
+    width: 100%;
+
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
 }
 
 /* portfolio*/
@@ -575,7 +640,7 @@ img {
 
 .my-dots {
   position: absolute;
-  top: -40px;
+  top: -44px;
   right: 25px;
 
   list-style-type: none;
@@ -609,6 +674,83 @@ img {
 
 .my-dots li.slick-active button {
   background: #ffffff;
+}
+
+.main-mobile-slider {
+  display: none !important;
+}
+
+@media screen and (max-width: 860px) {
+  .portfolio__title {
+    margin-left: 0;
+    padding: 40px 0;
+
+    text-align: center;
+  }
+
+  .slide {
+    padding: 0;
+  }
+
+  .portfolio__item {
+    width: 100%;
+  }
+
+  .portfolio__item-image:hover {
+    transform: scale(1);
+  }
+
+  .main-slider {
+    display: none !important;
+  }
+
+  .main-mobile-slider {
+    display: block !important;
+  }
+
+  .my-mobile-dots {
+    position: absolute;
+    bottom: -40px;
+    right: 50%;
+
+    list-style-type: none;
+
+    margin-right: -56px;
+  }
+
+  .my-mobile-dots li {
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .my-mobile-dots li button {
+    font-size: 0;
+    line-height: 0;
+
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .my-mobile-dots li button:hover {
+    background: #ffffff;
+  }
+
+  .my-mobile-dots li.slick-active button {
+    background: #ffffff;
+  }
+
+  .portfolio__item-desc {
+    text-align: center;
+  }
 }
 
 /* prices*/
@@ -707,6 +849,16 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 860px) {
+  .prices__list {
+    flex-direction: column;
+  }
+
+  .prices__item {
+    width: 100%;
+  }
+}
+
 /* about-us*/
 
 .about-us__inner {
@@ -749,6 +901,35 @@ img {
 
   text-align: right;
 }
+
+@media screen and (max-width: 860px) {
+  .about-us__title {
+    text-align: center;
+  }
+
+  .about-us__info {
+    flex-direction: column;
+  }
+
+  .about-us__desc-block,
+  .about-us__img-block {
+    width: 100%;
+  }
+
+  .about-us__desc-block {
+    order: 1;
+  }
+
+  .about-us__img-block {
+    margin-bottom: 20px;
+  }
+
+  .about-us__image {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* footer*/
 
 .footer {
@@ -872,4 +1053,24 @@ img {
 
 .footer__part-socials-item-link--instagram {
   background: url("../img/instagram.png") no-repeat;
+}
+
+@media screen and (max-width: 860px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer__part-address,
+  .footer__part-contact,
+  .footer__part-socials {
+    flex-direction: column;
+
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .footer__part-socials {
+    padding: 0 10px 50px;
+  }
 }
